@@ -1,0 +1,24 @@
+.vara {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.vara-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.vara-library {
+  width: 1.0625em;
+}
+
+.vara-bubbles4 {
+  width: 1.125em;
+}

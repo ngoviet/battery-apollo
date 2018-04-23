@@ -1,0 +1,23 @@
+<?php
+/*
+ * Author	: TechnoKnol
+ * Blog		: http://technoknol.blogspot.com
+ * Purpose	: Allow HTML tags in Widget Title in WordPress
+ *
+ * */
+// Add below code in your theme's functions.php file
+// Allow HTML tags in Widget title
+function html_widget_title($var) {
+	// $var = (str_replace( '[', '<', $var ));
+	$var = (str_replace('[', '<i class="fa ".', $var));
+	$var = (str_replace(']', '>', $var));
+	return $var;
+
+}
+add_filter('widget_title', 'html_widget_title');
+
+// Usage :    Use Forum type BB code styling just replace < & > with [ and ]
+// If you wanna give class to tag , Apply without Quote.
+// See Example Below.
+
+Titlewith[spanclass  = class_without_quote]spanTag[/span]
